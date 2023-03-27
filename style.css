@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    scrollbar-color: #484182 #6075B8;
+    scrollbar-color: #0648f2 #6075B8;
     scrollbar-width: thin;
 }
 
@@ -26,9 +26,6 @@ details ul {
 
 body {
     font-family: sans-serif;
-    background-image: url('https://sadgrl.online/images/new/peaceful.jpg');
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #maximize {
@@ -36,13 +33,13 @@ body {
 }
 
 summary.updates {
-    color: white !important;
+    color: #004c4c !important;
 }
 
 h1 {
     font-family: Georgia;
     font-size: 3vw;
-    color: #AA6FE7;
+    color: #008080;
     text-shadow: 1px 1px white;
     padding: 0;
     margin: 0;
@@ -72,28 +69,28 @@ h1 {
     border: 1px solid #1f367c;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #424056;
+    background-color: #e5ffff;
     overflow: auto;
     scrollbar-width: thin;
 }
 
 .wordBank a {
-    color: #FC94AF;
+    color: #66b2b2;
     text-decoration: none;
 }
 
 #chooseWords p {
-    color: white;
+    color: #004c4c;
 }
 
 #chooseWords p strong {
-    color: #FC94AF;
+    color: #008080;
 }
 
 #chooseWords summary {
     font-weight: bold;
     cursor: pointer;
-    color: #AA6FE7;
+    color: #008080;
 }
 
 #clearCustomization {
@@ -121,7 +118,7 @@ h1 {
     width: 100%;
     position: relative;
     border: 1px solid #6075B8;
-    background-color: #FED4E0;
+    background-color: #e5ffff;
     height: 100vh;
     z-index: 1;
 
@@ -178,12 +175,13 @@ p.none {
 }
 
 #addWord {
-    background-color: blue;
+    background-color: #004c4c;
     border-radius: 5px;
     padding: 10px;
     font-size: 12px;
     font-weight: bold;
-    background-color: #292835;
+    color: #004c4c;
+    background-color: #b2d8d8;
     border: 1px solid white;
 
 }
@@ -194,16 +192,16 @@ p.none {
 }
 
 .verbs {
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid teal;
 }
 
 #suffixes,
 #commonWords,
+#prepositions,
 #nouns,
 #verbs,
 #adjectives,
 #adverbs,
-#prepositions,
 
 #myWords {
     height: auto;
@@ -218,13 +216,13 @@ h3 {
 }
 
 .wordBankWrapper h3 {
-    color: white;
+    color: #004c4c;
 }
 
 .wordBankWrapper h2,
 #canvasWrapper h2 {
     font-family: Verdana;
-    color: #484182;
+    color: #004c4c;
     font-size: 20px;
     text-align: center;
     margin: 0;
@@ -245,16 +243,16 @@ h3 {
 }
 
 .scroll::-webkit-scrollbar-track {
-    background-color: #6075B8;
+    background-color: #a0d7ff;
 }
 
 .scroll::-webkit-scrollbar {
     width: 10px;
-    background-color: #f2b1a4;
+    background-color: #e5ffff;
 }
 
 .scroll::-webkit-scrollbar-thumb {
-    background-color: #384672;
+    background-color: #0648f2;
 }
 
 .mobile {
@@ -304,7 +302,7 @@ p.sorry {
 
 details,
 details strong {
-    color: white;
+    color: #004c4c;
 }
 
 .flex {
@@ -318,7 +316,7 @@ details strong {
 
 h3 {
     padding-bottom: 1px;
-    color: white !important;
+    color: #004c4c !important;
 }
 
 #clearBankHistory {
@@ -339,7 +337,7 @@ input[type=color] {
 }
 
 .inner-customize {
-    background-color: #4d4b63;
+    background-color: 	#b2d8d8;
     padding: 20px;
 }
 

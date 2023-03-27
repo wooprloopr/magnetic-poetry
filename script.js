@@ -18,11 +18,8 @@ $(function() {
         "d",
         "ed",
         "ness",
-        "-like",
-        "-shaped",
-        "-thin",
-        "-sweet",
-        "half-"
+        "like",
+        "en",
     ];
 
     let commonArr = [
@@ -653,11 +650,6 @@ $(function() {
         var currentBg = $("#canvas").css("background-color");
         $("#canvasColor").val(currentBg);
 
-        // loads settings
-        if (JSON.parse(localStorage.getItem("customization")) !== null) {
-            customization = JSON.parse(localStorage.getItem("customization"));
-            loadSettings();
-        }
         loadSettings();
     });
 
@@ -666,7 +658,7 @@ $(function() {
     // the 'customize' localStorage settings
     // i'm so silly for not using these (objects) more
     customization = {
-        canvasColor: "#FED4E0",
+        canvasColor: "#e5ffff",
         magnetColor: "#ffffff",
         borderColor: "black",
         textColor: "black",
