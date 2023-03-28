@@ -20,14 +20,22 @@ $(function() {
         "ness",
         "like",
         "en",
+        "ly",
+        "ful",
+        "ize",
+        "ity",
+        "co",
+        "un",
+        "less",
     ];
 
     let commonArr = [
         "a",
         "an",
         "the",
-        "there",
         "is",
+        "every",
+        "any",
         "these",
         "those",
         "are",
@@ -38,6 +46,8 @@ $(function() {
         "he",
         "his",
         "me",
+        "however",
+        "nonetheless",
         "let",
         "I",
         "for",
@@ -50,8 +60,6 @@ $(function() {
         "too",
         "of",
         "in",
-        "have",
-        "first",
         "not",
         "on",
         "as",
@@ -63,13 +71,10 @@ $(function() {
         "or",
         "will",
         "so",
-        "get",
-        "give",
         "would",
         "could",
         "should",
         "was",
-        "go",
         "might",
         "were",
         "your",
@@ -82,479 +87,271 @@ $(function() {
         "oh",
         "myself",
         "yourself",
-        "anything",
-        "nothing",
-        "everything",
         "who",
         "what",
         "when",
-        "come",
-        "came",
         "where",
         "why",
         "won't",
-        "see",
         "my",
-        "within",
-        "more",
         "no",
-        "want",
-        "toward"
+        "nor",
+        "yet"
     ];
 
     let nounArr = [
-        "tree",
-        "leaf",
+        "get",
+        "go",
+        "see",
+        "come",
+        "want",
+        "came",
+        "give",
+        "service",
+        "pain",
+        "memory",
+        "sea",
+        "stone",
+        "boar",
+        "sword",
+        "lance",
+        "shield",
+        "Dimitri",
+        "Felix",
+        "Fraldarius",
+        "Blaiddyd",
+        "king",
+        "duke",
+        "queen",
+        "crest",
+        "Faerghus",
+        "Fhirdiad",
+        "chamomile",
+        "pine",
+        "pegasus",
+        "burden",
+        "hair",
+        "man",
+        "woman",
+        "eye",
+        "cloak",
+        "intimacy",
+        "fish",
+        "scent",
+        "garden",
+        "frost",
+        "honey",
+        "glitter",
+        "plum",
+        "bear",
+        "shoe",
+        "blood",
         "star",
-        "rose",
+        "tomb",
+        "mirror",
+        "salt",
+        "glove",
+        "chain",
+        "tongue",
+        "finger",
+        "hand",
+        "fire",
+        "flame",
+        "interior",
+        "sleep",
+        "end",
         "thing",
-        "mushroom",
-        "toadstool",
-        "willow",
-        "canopy",
-        "witch",
         "goddess",
-        "mother",
-        "stillness",
-        "mistress",
+        "still",
         "stream",
         "meadow",
-        "deer",
-        "pond",
-        "gate",
-        "crystal",
-        "river",
-        "cave",
-        "mystery",
-        "cliff",
-        "forest",
-        "woods",
-        "chains",
-        "bat",
-        "owl",
-        "butterfly",
-        "moth",
-        "serpent",
-        "mermaid",
-        "frog",
-        "toad",
         "creature",
         "wolf",
-        "cat",
-        "bird",
-        "fog",
-        "wing",
-        "insect",
-        "critter",
-        "poison",
-        "rainwater",
         "storm",
         "weapon",
         "hunger",
-        "acid",
-        "wood",
-        "star",
-        "passion",
-        "moon",
-        "garden",
-        "vine",
-        "iris",
-        "azalea",
-        "pine",
-        "petal",
-        "dawn",
-        "vision",
         "sky",
         "throat",
-        "cloud",
-        "bough",
-        "lilac",
-        "silver",
-        "cream",
-        "strength",
-        "desert",
-        "light",
-        "shadow",
-        "dew",
-        "myth",
-        "sea-foam",
-        "honey",
-        "nectar",
-        "face",
-        "gloam",
-        "body",
-        "weakness",
-        "pollen",
         "snow",
-        "savage",
-        "sand",
-        "mist",
-        "tea",
-        "bark",
-        "rebirth",
-        "death",
-        "eternity",
-        "mercy",
-        "mouth",
-        "blood",
-        "sword",
-        "spirit",
-        "burial",
-        "destruction",
-        "elixir",
         "teeth",
-        "scent",
-        "morning",
-        "evening",
-        "night",
-        "tide",
-        "seawater",
-        "coffee",
-        "neck",
-        "glass",
-        "pearl",
-        "monster",
-        "flower",
-        "earth",
-        "woman",
-        "shield",
-        "pattern",
         "hole",
-        "dessert",
-        "salt",
-        "hope",
-        "temple",
-        "space",
-        "serendipity",
-        "bubble",
-        "twilight",
-        "growth",
-        "hand",
-        "war",
-        "limit",
-        "outside",
-        "violence",
-        "dawn",
-        "sorrow",
-        "stem",
-        "cowardice",
-        "sandbar",
-        "dusk",
-        "blood",
-        "eyes",
-        "life",
-        "mind",
-        "blossom",
-        "labor",
-        "voice",
-        "honeydew",
-        "unknown",
-        "sunbeam",
-        "home",
-        "moment",
-        "warrior",
-        "day",
-        "gum",
-        "midday",
-        "catharsis",
-        "tongue",
-        "haze",
-        "birth",
-        "afternoon",
-        "pain",
-        "wilderness",
-        "lagoon",
-        "planet",
-        "arch"
+        "arch",
+        "today",
+        "tomorrow",
+        "yesterday",
+        "edge",
     ];
 
     let verbArr = [
-        "hang",
-        "say",
-        "tell",
-        "ask",
-        "caught",
-        "find",
-        "shine",
-        "listen",
-        "dry",
-        "glitter",
-        "nestle",
-        "flicker",
-        "glow",
-        "soul",
-        "form",
-        "cloak",
-        "walk",
-        "fade",
-        "sparkle",
-        "choice",
-        "cling",
-        "shape",
-        "dig",
-        "hover",
-        "remind",
-        "pulse",
-        "break",
-        "crawl",
-        "incense",
-        "smile",
-        "hold",
-        "create",
-        "drift",
-        "crack",
-        "stay",
-        "drip",
-        "flash",
-        "sweep",
-        "know",
-        "writhe",
-        "bloom",
-        "brim",
-        "awake",
-        "asleep",
-        "grow",
-        "bask",
-        "fold",
-        "split",
-        "splinter",
-        "ignite",
-        "illuminate",
-        "intensify",
-        "gravitate",
-        "clutch",
-        "cower",
-        "lie",
-        "swallow",
-        "soar",
-        "shrivel",
-        "shimmer",
-        "crunch",
-        "float",
-        "breathe",
-        "weave",
-        "make",
-        "crush",
-        "bounce",
-        "veil",
-        "soak",
-        "shrink",
-        "warp",
-        "reflect",
-        "reach",
-        "tremble",
-        "whisper",
         "haunt",
-        "bend",
-        "pulsate",
-        "push",
-        "obliterate",
-        "smooth",
-        "roam",
-        "love",
-        "dive",
-        "crash",
-        "settle",
-        "stretch",
-        "blink",
-        "awaken",
-        "rush",
-        "curl",
-        "pull",
-        "edge",
-        "glide",
-        "embrace",
-        "lurch",
-        "electrify",
-        "roar",
-        "squeeze",
-        "grasp",
-        "fragment",
-        "catapult",
-        "surrender",
-        "march",
-        "howl",
+        "embarrass",
+        "have",
+        "encourage",
+        "deliver",
+        "flip",
+        "spar",
+        "spare",
+        "kiss",
+        "fuck",
+        "whet",
+        "polish",
+        "shine",
+        "save",
+        "stop",
+        "pamper",
+        "caress",
+        "ride",
+        "clash",
         "decay",
-        "growl",
-        "groan",
-        "smell",
-        "look",
-        "forgive",
-        "scream",
-        "lungs",
-        "weep",
-        "devastate",
-        "shatter",
-        "watch",
+        "hold",
+        "cling",
+        "flow",
+        "carry",
+        "eat",
+        "steal",
+        "caterwaul",
+        "handle",
+        "grow",
+        "flood",
+        "pierce",
+        "slay",
+        "leave",
+        "stay",
+        "snuffle",
+        "harangue",
+        "imprison",
+        "consume",
+        "inspire",
+        "flick",
+        "jab",
+        "lick",
+        "say",
+        "ask",
+        "find",
+        "fade",
+        "choose",
+        "pulse",
+        "drip",
+        "know",
+        "wake",
+        "sleep",
+        "splinter",
+        "clutch",
+        "breathe",
+        "veil",
+        "love",
+        "roar",
+        "surrender",
         "dance",
         "touch",
         "show",
         "believe",
-        "tell",
-        "ask"
+        "tangle",
     ];
 
     let adjectiveArr = [
-        "cool",
-        "pale",
-        "sharp",
-        "sacred",
-        "beautiful",
-        "dark",
-        "infinite",
-        "unhurried",
-        "flat",
-        "strange",
-        "outer",
-        "fair",
-        "fresh",
-        "quiet",
-        "dear",
-        "empty",
-        "magical",
-        "pretty",
+        "cruel",
+        "anxious",
+        "deliberate",
+        "cautious",
+        "florid",
+        "gentle",
+        "lone",
+        "long",
+        "tall",
+        "hot",
+        "merry",
+        "sexy",
+        "desperate",
+        "cold",
+        "savage",
+        "again",
+        "always",
+        "forever",
+        "soft",
         "deep",
-        "dying",
-        "first",
-        "uninterrupted",
+        "sudden",
+        "fierce",
+        "terrible",
+        "theatrical",
+        "porcine",
+        "plain",
+        "fine",
+        "beautiful",
+        "moist",
+        "weak",
+        "blue",
+        "teal",
+        "green",
+        "sharp",
+        "fertile",
+        "transparent",
+        "loud",
+        "quiet",
+        "frequent",
+        "never",
+        "bold",
+        "bad",
+        "sacred",
+        "outer",
+        "dear",
         "round",
-        "crimson",
         "young",
         "other",
-        "alive",
+        "live",
         "patient",
-        "starless",
         "cheap",
         "feral",
         "brittle",
         "tight",
-        "half-lit",
-        "cascading",
         "full",
-        "bright",
-        "fringed",
-        "forbidden",
-        "tangled",
-        "sunless",
-        "twisted",
-        "unsteady",
-        "mystical",
         "silken",
-        "soft",
-        "still",
         "sweet",
         "warm",
         "short",
         "open",
-        "unsettled",
-        "sleepy",
-        "powerful",
-        "perfumed",
         "wet",
+        "more",
         "burnt",
-        "long",
-        "snowy",
         "thick",
-        "stagnant",
-        "purple",
-        "black",
-        "green",
-        "pink",
-        "yellow",
-        "blue",
-        "red",
-        "orange",
-        "violet",
         "loose",
-        "broken",
-        "milky",
-        "unyielding",
         "bleak",
-        "bewitched",
-        "bruised",
-        "cloudy",
-        "cruel",
-        "deadly",
         "dry",
         "electric",
-        "fearless",
         "frozen",
-        "funny",
-        "glistening",
-        "glossy",
-        "growing",
         "hasty",
         "hollow",
         "hoarse",
-        "hot",
         "hungry",
-        "idle",
-        "knowing",
-        "leafy",
         "lost",
-        "low",
-        "melodic",
         "mild",
-        "misty",
         "modest",
-        "muddy",
-        "mysterious",
         "necessary",
         "new",
         "normal",
         "obvious",
         "old",
-        "open",
-        "plump",
         "proud",
-        "pure",
-        "raw",
-        "rich",
         "ripe",
-        "sandy",
-        "scarce",
-        "shimmering",
         "slight",
-        "small",
-        "steel",
+        "first",
         "tender",
-        "thorny",
-        "tired",
-        "twin",
         "useful",
-        "vacant",
-        "vivid",
-        "warlike",
-        "weak",
         "weird",
         "wild",
-        "wooden"
-
-
-
+        "still",
+        "often",
     ];
 
     let adverbArr = [
-        "warmly",
-        "barely",
-        "sleepily",
-        "sadly",
-        "slowly",
-        "here",
-        "there",
-        "clumsily",
-        "curiously",
-        "wistfully",
-        "farthest",
-        "endlessly",
+        "warm",
+        "bare",
         "darkest",
         "boldly",
         "brightly",
         "terribly",
         "always",
         "sickly",
-        "often",
-        "tomorrow",
         "quickly",
         "safely",
         "quietly",
@@ -562,8 +359,6 @@ $(function() {
         "hard",
         "fast",
         "bravely",
-        "however",
-        "nonetheless",
         "clearly",
         "easily",
         "fiercely",
@@ -594,9 +389,12 @@ $(function() {
         "despite",
         "except",
         "without",
+        "there",
         "within",
         "beside",
         "among",
+        "here",
+        "there",
         "beneath",
         "across",
         "before",
@@ -612,23 +410,29 @@ $(function() {
         "along",
         "next",
         "underneath",
+        "toward",
         "until"
     ];
 
     var otherArr = [...adverbArr, ...prepositionArr, ...adjectiveArr];
-    var myWords;
+    var myWords = [];
     var savedCanvas;
     var customization;
 
-    // .sort() alphabetizes the array, but it's not perfect!
-    nounArr = nounArr.sort();
-    verbArr = verbArr.sort();
-    suffixesArr = suffixesArr.sort();
-    adjectiveArr = adjectiveArr.sort();
-    adverbArr = adverbArr.sort();
-    prepositionArr = prepositionArr.sort();
-    otherArr = otherArr.sort();
-    commonArr = commonArr.sort();
+    function caseInsensitiveSort(arr) {
+        return arr.sort(function (a, b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase());
+        })
+    }
+
+    nounArr = caseInsensitiveSort(nounArr);
+    verbArr = caseInsensitiveSort(verbArr);
+    suffixesArr = caseInsensitiveSort(suffixesArr);
+    adjectiveArr = caseInsensitiveSort(adjectiveArr);
+    adverbArr = caseInsensitiveSort(adverbArr);
+    prepositionArr = caseInsensitiveSort(prepositionArr);
+    otherArr = caseInsensitiveSort(otherArr);
+    commonArr = caseInsensitiveSort(commonArr);
 
 
 
@@ -834,76 +638,84 @@ $(function() {
     function populateWordBank() {
         // this loops through every word in all arrays and
         // adds the 'magnets' to the wordbank in their respective divs
-        fullWordArr.forEach((element, index) => {
-            // I applied the 'suffix' class here because I wanted to style the suffices
-            // with no left border, so they fit nearly onto existing words
-            if (suffixesArr.includes(element)) {
-                $("#suffixes").append(
-                    '<span class="dragWord ui-droppable magnet suffix" id="' +
-                    element +
-                    '">' +
-                    element +
-                    "</span>"
-                );
-            } else if (commonArr.includes(element)) {
-                $("#commonWords").append(
-                    '<span class="dragWord ui-droppable magnet" id="' +
-                    element +
-                    '">' +
-                    element +
-                    "</span>"
-                );
-            } else if (nounArr.includes(element)) {
-                $("#nouns").append(
-                    '<span class="dragWord ui-droppable magnet" id="' +
-                    element +
-                    '">' +
-                    element +
-                    "</span>"
-                );
-            } else if (verbArr.includes(element)) {
-                $("#verbs").append(
-                    '<span class="dragWord ui-droppable magnet" id="' +
-                    element +
-                    '">' +
-                    element +
-                    "</span>"
-                );
-            } else if (adjectiveArr.includes(element)) {
-                $("#adjectives").append(
-                    '<span class="dragWord ui-droppable magnet" id="' +
-                    element +
-                    '">' +
-                    element +
-                    "</span>"
-                );
-            } else if (adverbArr.includes(element)) {
-                $("#adverbs").append(
-                    '<span class="dragWord ui-droppable magnet" id="' +
-                    element +
-                    '">' +
-                    element +
-                    "</span>"
-                );
-            } else if (prepositionArr.includes(element)) {
-                $("#prepositions").append(
-                    '<span class="dragWord ui-droppable magnet" id="' +
-                    element +
-                    '">' +
-                    element +
-                    "</span>"
-                );
-            } else if (myWords !== null) {
-                if (myWords.includes(element)) {
-                    $("#myWords").append(
-                        '<span class="dragWord ui-droppable magnet" id="' +
-                        element +
-                        '">' +
-                        element +
-                        "</span>"
-                    );
-                }
-            }
+        suffixesArr.forEach(element => {
+            $("#suffixes").append(
+                '<span class="dragWord ui-droppable magnet" id="' +
+                element +
+                '">' +
+                element +
+                "</span>"
+            );
+        });
+
+        commonArr.forEach(element => {
+            $("#commonWords").append(
+                '<span class="dragWord ui-droppable magnet" id="' +
+                element +
+                '">' +
+                element +
+                "</span>"
+            );
+        });
+
+        nounArr.forEach(element => {
+            $("#nouns").append(
+                '<span class="dragWord ui-droppable magnet" id="' +
+                element +
+                '">' +
+                element +
+                "</span>"
+            );
+        });
+
+        verbArr.forEach(element => {
+            $("#verbs").append(
+                '<span class="dragWord ui-droppable magnet" id="' +
+                element +
+                '">' +
+                element +
+                "</span>"
+            );
+        });
+
+        adjectiveArr.forEach(element => {
+            $("#adjectives").append(
+                '<span class="dragWord ui-droppable magnet" id="' +
+                element +
+                '">' +
+                element +
+                "</span>"
+            );
+        });
+
+        adverbArr.forEach(element => {
+            $("#adverbs").append(
+                '<span class="dragWord ui-droppable magnet" id="' +
+                element +
+                '">' +
+                element +
+                "</span>"
+            );
+        });
+
+        prepositionArr.forEach(element => {
+            $("#prepositions").append(
+                '<span class="dragWord ui-droppable magnet" id="' +
+                element +
+                '">' +
+                element +
+                "</span>"
+            );
+        });
+
+        myWords.forEach(element => {
+            $("#myWords").append(
+                '<span class="dragWord ui-droppable magnet" id="' +
+                element +
+                '">' +
+                element +
+                "</span>"
+            );
         });
     }
 
@@ -939,9 +751,6 @@ $(function() {
                 // this makes the suffices 'snap' to existing magnets
                 $(clone).draggable({
                     containment: "parent",
-                    snap: true,
-                    snapMode: "both",
-                    snapTolerance: 10,
                 });
                 addDraggable();
 
