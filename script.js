@@ -397,7 +397,6 @@ $(function() {
         "beside",
         "among",
         "here",
-        "there",
         "beneath",
         "across",
         "before",
