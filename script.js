@@ -100,13 +100,6 @@ $(function() {
     ];
 
     let nounArr = [
-        "get",
-        "go",
-        "see",
-        "come",
-        "want",
-        "came",
-        "give",
         "service",
         "pain",
         "memory",
@@ -183,6 +176,13 @@ $(function() {
     ];
 
     let verbArr = [
+        "get",
+        "go",
+        "see",
+        "come",
+        "want",
+        "came",
+        "give",
         "haunt",
         "embarrass",
         "have",
