@@ -101,6 +101,9 @@ $(function() {
 
     let nounArr = [
         "service",
+        "school",
+        "prince",
+        "academy",
         "pain",
         "memory",
         "sea",
