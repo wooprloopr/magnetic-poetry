@@ -594,14 +594,13 @@ $(function() {
         if (confirm(msg) == true) {
             if (type === "words") {
                 localStorage.removeItem("myWords");
-                // this lets me reload in codepen lol
-                history.go(0);
+                window.location.reload();
             } else if (type === "magnets") {
                 localStorage.removeItem("savedCanvas");
-                history.go(0);
+                window.location.reload();
             } else if (type === "customization") {
                 localStorage.removeItem("customization");
-                history.go(0);
+                window.location.reload();
             }
         }
     }
@@ -815,19 +814,18 @@ $(function() {
 
     // === DELETE WORDS FROM CANVAS ===
 
+    $(document).on("dblclick", ".dropped-element", function() {
+        var toDelete = $(this).text();
+        $(this).remove();
+        saveCanvas();
+    });
+
     // checks if device is mobile
     if (
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
             navigator.userAgent
         )
     ) {
-        $(".mobile").css("display", "block");
-        $(".desc").css("display", "none");
-        $(".instruct").css("display", "none");
-        $(document).on("taphold", ".dropped-element", function() {
-            $(this).remove();
-        });
-
         // === MINIMIZING BANK (on mobile) ===
         // when the 'x' button is clicked...
         $("#minimize").on("click", function() {
@@ -854,13 +852,6 @@ $(function() {
             $("#maximize").css("display", "none");
         });
     } else {
-        // if not mobile, then the words are deleted on doubleclick
-        $(document).on("dblclick", ".dropped-element", function() {
-            var toDelete = $(this).text();
-            $(this).remove();
-            saveCanvas();
-        });
-
         // BEGIN: === WORD BANK ===
 
         // === MINIMIZING BANK (on Desktop) ===
