@@ -814,18 +814,17 @@ $(function() {
 
     // === DELETE WORDS FROM CANVAS ===
 
-    $(document).on("dblclick", ".dropped-element", function() {
-        var toDelete = $(this).text();
-        $(this).remove();
-        saveCanvas();
-    });
-
     // checks if device is mobile
     if (
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
             navigator.userAgent
         )
     ) {
+        $(document).on("taphold", ".dropped-element", function() {
+            $(this).remove();
+            saveCanvas();
+        });
+
         // === MINIMIZING BANK (on mobile) ===
         // when the 'x' button is clicked...
         $("#minimize").on("click", function() {
@@ -852,6 +851,11 @@ $(function() {
             $("#maximize").css("display", "none");
         });
     } else {
+        $(document).on("dblclick", ".dropped-element", function() {
+            $(this).remove();
+            saveCanvas();
+        });
+
         // BEGIN: === WORD BANK ===
 
         // === MINIMIZING BANK (on Desktop) ===
